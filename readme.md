@@ -1,6 +1,6 @@
-# WEB SKELETON
+# WEB TEMPLATE
 
-## WORK ON CLIENT
+## Web template using React, Redux and Koa
 
-### Currently working on React Router
+
 

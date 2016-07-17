@@ -6,8 +6,7 @@ import spies from 'chai-spies';
 
 describe('Actions', () => {
     
-    Chai.use(spies);
-    
+    // Chai.use(spies);
     //  use spy for functions that dispatch an action creator e.g async
     //
     //  const dispatch = Chai.spy();

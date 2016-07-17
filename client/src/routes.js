@@ -1,6 +1,7 @@
 import React from 'react';
-import { Router,  Route, Link, IndexRoute, Redirect, browserHistory } from 'react-router';
-import { createHistory } from 'history';
+import { Router, Route, IndexRoute, Redirect, browserHistory } from 'react-router';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 //  STATELESS COMPONENTS 
 //
@@ -9,10 +10,10 @@ import Nav from './components/Layout/Nav';
 
 //  CLASS COMPONENTS 
 //
-import SecondaryRoute from './components/Page/SecondaryRoute';
 import Index from './components/Page/Index';
+import SecondaryRoute from './components/Page/SecondaryRoute';
 
-export const Routes = <Router history={ browserHistory }>
+export const Routes =   <Router history={ browserHistory }>
                             <Route path="/" component={ Container }>
                                 <IndexRoute component={ Index }></IndexRoute>
                                 <Route path="secondary-route" component={ SecondaryRoute }>

@@ -1,13 +1,13 @@
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import About from './About';
+import SecondaryRoute from './SecondaryRoute';
 import { expect } from 'chai';
 
-describe('About', () => {
+describe('SecondaryRoute', () => {
     it('renders ok', () => {
         
       const component = TestUtils.renderIntoDocument(
-          <About />
+          <SecondaryRoute />
       );
                   
       expect(component).to.be.ok;     
@@ -22,10 +22,10 @@ describe('About', () => {
        };
         
       const component = TestUtils.renderIntoDocument(
-          <About location={location} />
+          <SecondaryRoute location={location} />
       );
       
-      const target = TestUtils.findRenderedDOMComponentWithClass(component, 'about')
+      const target = TestUtils.findRenderedDOMComponentWithClass(component, 'SecondaryRoute')
             
       expect(target.innerHTML).to.contain('foobar');     
     });

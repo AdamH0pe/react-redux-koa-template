@@ -1,14 +1,14 @@
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import Home from './Home';
+import Index from './Index';
 import { expect } from 'chai';
 import store from './../../store';
 
-describe('Home', () => {
+describe('Index', () => {
     it('renders ok', () => {
           
         const component = TestUtils.renderIntoDocument(
-            <Home store={store} />
+            <Index store={store} />
         );
                     
         expect(component).to.be.ok;     

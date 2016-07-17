@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import Reducers from './reducers';
-import Home from '../components/Page/Home';
+// import Index from '../components/Page/Index';
 import * as actions from '../actions/actions';
 
 export const action = { ...actions };
 export const reducers = Reducers;
-export const components = { Home };
+// export const components = { Index };
